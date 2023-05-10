@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: url('./assets/background-1.png') no-repeat;
+  background-size: 100% 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+.bodyHome {
+    background: url('./assets/background-1.png') no-repeat;
+  background-size: 100% 100vh;
+}
+.bodyUniverse {
+  background: url('./assets/mountains-universe-2.png') no-repeat;
+  background-size: 100% 100vh;
+}
+.bodyExplore {
+  background: url('./assets/mountains-universe-3.png') no-repeat;
+  background-size: 100% 100vh;
+}
+
+.hide {
+  display: none;
+}
+nav {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 7rem;
+  align-items: center;
+}
+
+a{
+  font-size: 2.4rem;
+  color: #bdbbbb;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(227, 225, 225);
+}
+.active {
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  padding: 14rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.aside {
+  width: 70%;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 6rem 10rem;
+  position:absolute;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #E1E1E6;
+  line-height: 160%;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: hsla(240, 9%, 89%, 1);
+  letter-spacing: 0.1rem;
+}
+.title {
+  animation: upMessage 1s ease-out forwards;
+}
+.fromLeft {
+  animation: leftText 1s ease-out forwards;
+}
+@keyframes upMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(11rem) scale(0.1);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes leftText {
+  0% {
+    opacity: 0;
+    transform: translateX(-60rem) scale(0.1);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 8px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  color: hsla(0,0%, 100%, 1);
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+button:hover{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  color: #02799D;
+}
+
+

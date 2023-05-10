@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universer</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+      <header>
+      <nav>
+        <a href="/home" >
+          <img src="/assets/logo.svg" alt="logo space" />
+        </a>
+        <a class="homeLink" href="/" onclick="route()">Home</a>
+        <a class="universeLink" href="/universe" onclick="route()">O universo</a>
+        <a class="exploreLink" href="/explore" onclick="route()">Exploração</a>
+        <a href="/404" onclick="route()"></a>
+      </nav>
+    </header>
+
+    <div id="app"></div>
+
+    <script src="./js/index.js" type="module" >
+
+    </script>
+  </body>
+</html>
